@@ -18,5 +18,5 @@ jobs:
     - name: Build the Docker image
       run: |
         cd hello-observability
-        ./mvnw package
+        ./mvnw --no-transfer-progress package
         docker build . --file Dockerfile --tag hello-observability
