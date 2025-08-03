@@ -19,4 +19,4 @@ jobs:
       run: |
         cd hello-observability
         ./mvnw --no-transfer-progress package
-        docker build . --file Dockerfile --tag hello-observability
+        docker build -l warning . --file Dockerfile --tag hello-observability
